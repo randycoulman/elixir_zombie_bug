@@ -58,7 +58,8 @@ defmodule ZombieBug.MixProject do
   defp aliases do
     [
       setup: ["deps.get"],
-      "assets.deploy": ["esbuild default --minify", "phx.digest"]
+      "assets.deploy": ["esbuild default --minify", "phx.digest"],
+      s: ["cmd ./spawn.bash elixir --sname zombie -S mix phx.server"]
     ]
   end
 end
